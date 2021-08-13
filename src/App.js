@@ -1,8 +1,11 @@
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header";
+
 function App() {
+  const name = "Ankur";
   return (
-    <div className="App">
-      <h1 className="text-center">To Do Activities</h1>
+    <div className="container">
+      <Header />
     </div>
   );
 }

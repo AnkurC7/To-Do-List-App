@@ -5,4 +5,11 @@ code . open VS code in current folder
 ctrl ~ to open terminal
 
 npm start Start developmental server
+_________________________________________
+ctrl k c Comment code
+ctrl k u Uncomment code
+
+rafce Boilerplate of an Arrow function based component ES7
+impt import proptypes
+
 
