@@ -11,5 +11,8 @@ ctrl k u Uncomment code
 
 rafce Boilerplate of an Arrow function based component ES7
 impt import proptypes
+_________________________________________
+npm i react-icons
 
+//state gets passed down, actions get passed up
 
