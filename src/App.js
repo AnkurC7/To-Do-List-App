@@ -26,13 +26,13 @@ function App() {
     {
       id: 4,
       text: "Shopping",
-      day: "August 18th at 3:30pm",
+      day: "August 18th at 3:00pm",
       reminder: true,
     },
   ]);
 
   const deleteTask = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id));
+    console.log("delete", id);
   };
 
   return (
