@@ -1,0 +1,8 @@
+npx create-react-app my-app
+cd mp-app
+
+code . open VS code in current folder
+ctrl ~ to open terminal
+
+npm start Start developmental server
+

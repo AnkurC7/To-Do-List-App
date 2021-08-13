@@ -1,0 +1,61 @@
+# git clone (link) then open the repo folder in terminal..ls -la to check
+# git status to check status
+# git add . to track all files
+# git status
+# git commit -m "Title Message what and why" -m "Description"
+# git push origin main
+
+#git init
+#git status
+#git add .
+#git commit -m "Title" -m "Description"
+#git remote add origin (create new repo and psste link)
+#git remote -v
+#git branch -M main
+#git push -u origin main {can use git push from next time using upstream)
+
+
+##SSH KEYS
+
+#ssh-keygen -t rsa -b 4096 -c "Email"
+#enter the folder ~/.ssh can do via GIT cmd too
+##UPLOAD testkey.pub to github interface
+#eval "$(ssh-agent -s)"
+#ssh-add -K id_rsa or path to id_rsa ~/.ssh/id_rsa
+
+##branching
+
+#git branch
+#git checkout -b feature-new-addons-instruction {fea or inst tab to autocomplete}
+#git branch
+#git checkout main
+#git branch
+
+#git diff branch-name (master branch doesn't have what's in red)
+#git checkout branch-name
+#git push -u origin branch-name
+
+##pull request PR
+feature branch to master branch
+
+To get changes on local master branch from origin
+
+#git pull
+#git branch -d (branch-name)
+
+#git commit -am "message"
+#git merge master
+
+##Undo Staging
+
+#git reset
+#git status to check
+#git reset HEAD~1 (unstaged and uncommitted the changes of both add and commit the most reent and 1 more change before it)
+#git log
+#git reset (hashnumber from log)
+#git reset --hard (hashnumber from log)
+
+
+
+
+
