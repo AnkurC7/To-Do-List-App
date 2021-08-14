@@ -15,4 +15,9 @@ _________________________________________
 npm i react-icons
 
 //state gets passed down, actions get passed up
+_________________________________________
+npm run build
+npm i -g serve Install npm server
+serve -s build-p 8000
+
 
