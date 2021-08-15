@@ -47,12 +47,13 @@ body::after {
 
 .container {
   max-width: 500px;
-  margin: 30px auto;
+  margin: 25px auto 30px auto;
   overflow: auto;
   min-height: 300px;
   padding: 30px;
   position: relative;
   z-index: 5;
+  user-select: none;
 }
 
 .containerGlass {
@@ -62,6 +63,7 @@ body::after {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
+  z-index: 5;
 }
 
 .header {
@@ -69,9 +71,10 @@ body::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #fff;
   z-index: 5;
+  user-select: none;
 }
 
 .wrapper {
@@ -89,7 +92,8 @@ body::after {
 .btn {
   display: inline-block;
   background: rgb(255, 255, 255);
-  color: #000;
+  color: #161623;
+  font-weight: 250;
   border: none;
   padding: 10px 25px;
   margin: 5px;
@@ -115,6 +119,10 @@ body::after {
   width: 100%;
 }
 
+.btn-block:hover {
+  background-color: rgb(119, 245, 119);
+}
+
 .task {
   margin: 9px;
   padding: 10px 35px;
@@ -132,16 +140,19 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: 350;
+  font-weight: 300;
   letter-spacing: 0.7px;
+  font-size: 1.1em;
 }
 
 p {
   font-weight: 100;
   letter-spacing: 0.5px;
+  font-size: 1em;
 }
 .add-form {
   margin-bottom: 40px;
+  margin-top: -15px;
 }
 
 .form-control {
@@ -150,7 +161,7 @@ p {
 }
 
 .form-control label {
-  display: block;
+  display: inline-block;
 }
 
 .form-control input {
@@ -168,15 +179,24 @@ p {
 }
 
 .form-control-check label {
-  flex: 1;
+  flex: 6;
 }
 
 .form-control-check input {
-  flex: 2;
+  flex: 0.5;
   height: 20px;
 }
 
 footer {
   margin-top: 30px;
   text-align: center;
+}
+.check {
+  border-radius: 15px;
+  box-shadow: 5px 0px 25px 10px #3cffbe;
+  background-color: white;
+}
+.container2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
