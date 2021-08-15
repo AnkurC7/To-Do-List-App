@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AddTask = ({ onAdd }) => {
+const AddTask = ({ onAdd, showAddTask }) => {
   const [text, setText] = useState("");
   const [day, setDay] = useState("");
   const [reminder, setReminder] = useState(false);
@@ -22,7 +22,10 @@ const AddTask = ({ onAdd }) => {
   };
 
   return (
-    <form className="add-form container containerGlass" onSubmit={onSubmit}>
+    <form
+      className={`add-form container ${showAddTask ? "" : "containerGlass"}`}
+      onSubmit={onSubmit}
+    >
       <div className="form-control content">
         <label>Task</label>
         <input

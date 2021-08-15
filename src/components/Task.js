@@ -8,7 +8,7 @@ const Task = ({ task, onDelete, onToggle }) => {
       <h3>
         {task.text}
         <FaTimes
-          style={{ color: "red", cursor: "pointer" }}
+          style={{ color: "white", cursor: "pointer" }}
           onClick={() => onDelete(task.id)}
           //arrow function so that it won't go and fetch
           //value on each reload for every task

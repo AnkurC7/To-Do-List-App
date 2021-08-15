@@ -54,12 +54,19 @@ function App() {
   };
 
   return (
-    <div className={`${showAddTask ? "wrapper2" : "wrapper"}`}>
-      <Header
-        onAdd={() => setShowAddTask(!showAddTask)}
-        showAdd={showAddTask}
-      />
-      {showAddTask ? <AddTask onAdd={addTask} /> : ""}
+    <div className={`${showAddTask ? "" : "wrapper"}`}>
+      <div className={`${showAddTask ? "wrapper" : ""}`}>
+        <Header
+          onAdd={() => setShowAddTask(!showAddTask)}
+          showAdd={showAddTask}
+        />
+        {showAddTask ? (
+          <AddTask onAdd={addTask} showAddTask={showAddTask} />
+        ) : (
+          ""
+        )}
+      </div>
+
       {tasks.length > 0 ? (
         <Tasks
           tasks={tasks}

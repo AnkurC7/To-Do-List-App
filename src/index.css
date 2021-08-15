@@ -116,28 +116,37 @@ body::after {
 }
 
 .task {
-  background: #f4f4f4;
-  margin: 5px;
-  padding: 10px 20px;
+  margin: 9px;
+  padding: 10px 35px;
   cursor: pointer;
+  color: white;
+  border-radius: 8px;
+  background: rgba(175, 165, 165, 0.1);
 }
 
 .task.reminder {
-  border-left: 5px solid green;
+  box-shadow: 2.5px -2.5px 12.5px 5px #3cffbe;
 }
 
 .task h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 350;
+  letter-spacing: 0.7px;
 }
 
+p {
+  font-weight: 100;
+  letter-spacing: 0.5px;
+}
 .add-form {
   margin-bottom: 40px;
 }
 
 .form-control {
   margin: 20px 0;
+  color: white;
 }
 
 .form-control label {
