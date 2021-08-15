@@ -1,5 +1,5 @@
 npx create-react-app my-app
-cd mp-app
+cd my-app
 
 code . open VS code in current folder
 ctrl ~ to open terminal

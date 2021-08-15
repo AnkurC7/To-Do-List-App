@@ -1,8 +1,8 @@
 import Task from "./Task";
 
-const Tasks = ({ tasks, onDelete, onToggle }) => {
+const Tasks = ({ tasks, onDelete, onToggle, showAddTask }) => {
   return (
-    <>
+    <div className={`container ${showAddTask ? "containerGlass" : ""}`}>
       {tasks.map((task) => (
         <Task
           key={task.id}
@@ -11,7 +11,7 @@ const Tasks = ({ tasks, onDelete, onToggle }) => {
           onToggle={onToggle}
         />
       ))}
-    </>
+    </div>
   );
 };
 

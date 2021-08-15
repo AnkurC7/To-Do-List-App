@@ -1,12 +1,22 @@
-# Getting Started with Create React App
+# To Do List App created using create React App Boiler Plate
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Methodology
 
-In the project directory, you can run:
+The methodology implemented while creating this App is listed below
 
-### `npm start`
+### `General Structure`
+
+We have a div element called "root" in our index.html file which is in the public folder.
+
+We render our app into that div using REACTDOM.render via index.js file which is in the src folder. All styling are included in the index.css file in the same folder where we also have our app in a file called App.js.
+
+All of our components are in the components folder which we have imported in the App.js file for rendering.
+
+### `App.js`
+
+Everything in our app is wrapped up in a div with a class name of container.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

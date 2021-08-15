@@ -22,8 +22,8 @@ const AddTask = ({ onAdd }) => {
   };
 
   return (
-    <form className="add-form" onSubmit={onSubmit}>
-      <div className="form-control">
+    <form className="add-form container containerGlass" onSubmit={onSubmit}>
+      <div className="form-control content">
         <label>Task</label>
         <input
           type="text"
@@ -32,7 +32,7 @@ const AddTask = ({ onAdd }) => {
           onChange={(e) => setText(e.target.value)}
         />
       </div>
-      <div className="form-control">
+      <div className="form-control content">
         <label>Day & Time</label>
         <input
           type="text"
