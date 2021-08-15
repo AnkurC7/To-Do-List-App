@@ -67,16 +67,18 @@ function App() {
         )}
       </div>
 
-      {tasks.length > 0 ? (
-        <Tasks
-          tasks={tasks}
-          onDelete={deleteTask}
-          onToggle={toggleReminder}
-          showAddTask={showAddTask}
-        />
-      ) : (
-        "No Tasks To Show"
-      )}
+      <div className={`${showAddTask ? "wrapper2" : ""}`}>
+        {tasks.length > 0 ? (
+          <Tasks
+            tasks={tasks}
+            onDelete={deleteTask}
+            onToggle={toggleReminder}
+            showAddTask={showAddTask}
+          />
+        ) : (
+          <p>No Tasks To Show</p>
+        )}
+      </div>
     </div>
   );
 }
